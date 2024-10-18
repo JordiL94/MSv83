@@ -66,6 +66,7 @@ import client.command.commands.gm2.DcCommand;
 import client.command.commands.gm2.EmpowerMeCommand;
 import client.command.commands.gm2.GachaListCommand;
 import client.command.commands.gm2.GmShopCommand;
+import client.command.commands.gm2.TestShopCommand;
 import client.command.commands.gm2.HealCommand;
 import client.command.commands.gm2.HideCommand;
 import client.command.commands.gm2.IdCommand;
@@ -405,6 +406,7 @@ public class CommandsExecutor {
         addCommand(new String[]{"warphere", "summon"}, 2, SummonCommand.class);
         addCommand(new String[]{"warpto", "reach", "follow"}, 2, ReachCommand.class);
         addCommand("gmshop", 2, GmShopCommand.class);
+        addCommand("testshop", 2, TestShopCommand.class);
         addCommand("heal", 2, HealCommand.class);
         addCommand("item", 2, ItemCommand.class);
         addCommand("drop", 2, ItemDropCommand.class);
